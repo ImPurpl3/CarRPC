@@ -17,6 +17,8 @@ pyinstaller -i "car.ico" ^ -n "CarRPC" ^ --onefile ^ "car.py"
 # Implementing
 __You will need a good understanding of ActionScript to implement this into your own hack__
 
+
+__On the Flash Side__
 The following gets the Flash Cookie for use of the RPC:
 ```
 var rpcSet:SharedObject;
@@ -29,6 +31,10 @@ To check if the setting is on to run the program:
 if (rpcSet.data.setting == "On") {
   fscommand("exec","CarRPC.exe");
 }
+```
+To save to the Flash Cookie:
+```
+rpcSet.data.detail = "*detail goes here, ex. In Menu, Level 3*";
 ```
 Add your own code as needed
 
