@@ -32,6 +32,10 @@ if (rpcSet.data.setting == "On") {
 ```
 Add your own code as needed
 
+For using your own Discord Rich Presence Application ID:
+* Large Image name is "icon"
+* Small Image names are from minimum levels to maximum levels, ex. 1-12, 1-17, 8-9
+
 # Arguments
 ```
 usage: CarRPC.exe [-h] [-s SOLPASS] [-i IDPASS] [-x MAXPASS] [-m MINPASS]
